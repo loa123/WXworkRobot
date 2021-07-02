@@ -8,8 +8,8 @@ class Plugin extends Bot {
     super();
   }
   async run () {
-    const now = new Date().Format('M/d h:m:s') + 86400 * 8 ;
-    await this.sendImage('assets/geekbot.png');
+    const now = new Date().Format('M/d h:m:s')  ;
+    //await this.sendImage('assets/geekbot.png');
     // 发送环境配置信息
     const CONF_DATA = `
 ## GeekBot Secrets Dump
