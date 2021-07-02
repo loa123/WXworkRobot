@@ -8,7 +8,7 @@ class Plugin extends Bot {
     super();
   }
   async run () {
-    const now = new Date().Format('M/d h:m:s');
+    const now = new Date().Format('M/d h:m:s') + 8 ;
     await this.sendImage('assets/geekbot.png');
     // 发送环境配置信息
     const CONF_DATA = `
@@ -34,7 +34,7 @@ ${process.env.secrets_caiyun_key}
 > https://github.com/loa123/WXworkRobot`;
     const f = await this.uploadFile("配置数据备份.md", Buffer.from(CONF_DATA));
     await this.sendFile(f);
-    await this.sendMarkdown("🤖 Hello! GeekBot!\n> 项目地址：[@GeekBot](https://github.com/loa123/WXworkRobot)\n> 启动时间：" + now + "08:00:00"); //修正为北京时间
+    await this.sendMarkdown("🤖 Hello! GeekBot!\n> 项目地址：[@GeekBot](https://github.com/loa123/WXworkRobot)\n> 启动时间：" + now ); //修正为北京时间
 
     // test env
     // const $f = await this.uploadFile("env.txt", new Buffer(JSON.stringify(process.env)));
