@@ -15,8 +15,8 @@ class Plugin extends Bot {
       {
         title: data.title,
         description: data.content,
-        picurl: data.img_url,
-        url: data.url
+        picurl: "https://shimo.im/sheets/gwJhK8hTkkpXH3w6/",  //data.img_url
+        url: "https://shimo.im/sheets/gwJhK8hTkkpXH3w6/"      //data.url
       }
     ]);
   }
