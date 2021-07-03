@@ -25,9 +25,14 @@ ${process.env.bot_api}
 ${process.env.secrets_caiyun_gps}
 \`\`\`
 
-## 2. \`caiyun_key\`
+## 3. \`caiyun_key\`
 \`\`\`
 ${process.env.secrets_caiyun_key}
+\`\`\`
+
+## 4. \`tianapi_key\`
+\`\`\`
+${process.env.secrets_tianapi_key}
 \`\`\`
 
 > 导出时间：${now}
