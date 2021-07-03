@@ -30,7 +30,7 @@
 
 ## 禁用插件
 比如禁用毒鸡汤，则添加`secrets`->`plug_dujitang_disabled`=`true`
-需在相应的类似`plugins/dujitang.js`的代码中添加退出代码`if (process.env.plug_disabled === 'true') this.exit();//增加退出变量`
+需在相应的类似`plugins/dujitang.js`的代码中添加退出代码`if (process.env.plug_disabled === 'true') this.exit();`
 
 ## 注意
 cron 时间为美国时间，需要北京时间减去8小时设置。
