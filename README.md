@@ -4,13 +4,11 @@
 
 ![](assets/geekbot.png)
 
-![](https://i.loli.net/2020/05/20/MgEONhb2WKuQ6c4.gif)
-
 ### 目前支持如下插件：
-- 毒鸡汤文本（dujitang，每1小时推送）
-- v2ex 每日最新帖子（v2ex_latest，每天08:00推送)
-- v2ex 每日最热帖子（v2ex_hot, 每天18:00推送）
-- 彩云天气预报（caiyun_weather，每小时整推送）
+- 毒鸡汤文本（dujitang，每3小时推送）
+- v2ex 每日最新帖子（v2ex_latest，每天08:00推送) //已禁用
+- v2ex 每日最热帖子（v2ex_hot, 每天18:00推送）   //已禁用
+- 彩云天气预报（caiyun_weather，每3小时整推送）
 - ONE一个图文（one，每天08:20推送）
 - 早安心语（good_morning，每天 08:05）
 
@@ -32,6 +30,7 @@
 
 ## 禁用插件
 比如禁用毒鸡汤，则添加`secrets`->`plug_dujitang_disabled`=`true`
+需在相应的类似`plugins/dujitang.js`的代码中添加退出代码`if (process.env.plug_disabled === 'true') this.exit();//增加退出变量`
 
 ## 注意
 cron 时间为美国时间，需要北京时间减去8小时设置。
