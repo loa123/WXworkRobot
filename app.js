@@ -30,9 +30,9 @@ ${process.env.secrets_caiyun_gps}
 ${process.env.secrets_caiyun_key}
 \`\`\`
 
-## 4. \`tianapi_key\`
+## 4. \`goodmring_key\`
 \`\`\`
-${process.env.secrets_tianapi_key}
+${process.env.secrets_GOOD_MORNING_key}
 \`\`\`
 
 > 导出时间：${now}
