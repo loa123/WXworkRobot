@@ -30,16 +30,16 @@ ${process.env.secrets_caiyun_gps}
 ${process.env.secrets_caiyun_key}
 \`\`\`
 
-## 4. \`goodmring_key\`
+## 4. \`tianapi_key\`
 \`\`\`
-${process.env.secrets_GOOD_MORNING_key}
+${process.env.secrets_tianapi_key}
 \`\`\`
 
 > 导出时间：${now}
 > https://github.com/loa123/WXworkRobot`;
     const f = await this.uploadFile("配置数据备份.md", Buffer.from(CONF_DATA));
     await this.sendFile(f);
-    await this.sendMarkdown("🤖 Hello! GeekBot!\n> 项目地址：[@GeekBot](https://github.com/loa123/WXworkRobot)\n> 启动时间：" + now ); //修正为北京时间
+    await this.sendMarkdown("🤖 Hello! 企业微信机器人!\n> 项目地址：[@GeekBot](https://github.com/loa123/WXworkRobot)\n> 启动时间：" + now ); //修正为北京时间
 
     // test env
     // const $f = await this.uploadFile("env.txt", new Buffer(JSON.stringify(process.env)));
