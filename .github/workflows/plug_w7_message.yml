@@ -19,3 +19,4 @@ jobs:
         env:
           bot_api: ${{ secrets.bot_api }}
           w7_cookie: ${{ secrets.w7_cookie }}
+          plug_disabled: ${{ secrets.plug_w7_message_disabled }}
