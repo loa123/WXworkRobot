@@ -7,7 +7,7 @@ class Plugin extends Bot {
   constructor () {
     super();
     this.API = "https://www.v2ex.com/api/topics/latest.json";
-    if (process.env.plug_disabled === 'true') this.exit(); //退出环境
+    if (process.env.v2ex_latest_disabled === 'true') this.exit(); //退出环境
   }
   run () {
     axios.get(this.API).then(res => {
