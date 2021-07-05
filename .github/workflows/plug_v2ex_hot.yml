@@ -18,3 +18,4 @@ jobs:
       - run: node ./plugins/v2ex_hot.js
         env:
           bot_api: ${{ secrets.bot_api }}
+          plug_disabled: ${{ secrets.plug_v2ex_hot_disabled }}
