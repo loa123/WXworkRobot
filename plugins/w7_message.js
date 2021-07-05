@@ -8,7 +8,7 @@ class Plugin extends Bot {
   constructor () {
     super();
     this.COOKIE = process.env.w7_cookie;
-    if (process.env.plug_disabled === 'true') this.exit();//退出环境开关
+    if (process.env.w7_message_disabled === 'true') this.exit();//退出环境开关
     if (!this.COOKIE) return this.exit();
   }
   run () {
