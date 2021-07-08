@@ -5,12 +5,12 @@
 ![](assets/geekbot.png)
 
 ### 目前支持如下插件：
-- 毒鸡汤文本（dujitang，每3小时推送）
-- v2ex 每日最新帖子（v2ex_latest，每天08:00推送) //已禁用
-- v2ex 每日最热帖子（v2ex_hot, 每天18:00推送）   //已禁用
+- 毒鸡汤文本（dujitang，每3小时推送）              //已禁用
+- v2ex 每日最新帖子（v2ex_latest，每天08:00推送)  //已禁用
+- v2ex 每日最热帖子（v2ex_hot, 每天18:00推送）    //已禁用
 - 彩云天气预报（caiyun_weather，每3小时整推送）
 - ONE一个图文（one，每天08:20推送）
-- 早安心语（good_morning，每天 08:05）
+- 早安心语（good_morning，每天 08:05）           //已禁用
 
 ## 配置
 在项目的 `settings` -> `Secrets` 中添加 `bot_api` 字段，内容为企业群机器人webhook接口地址
