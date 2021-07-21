@@ -48,9 +48,6 @@ class Plugin extends Bot {
 > <font color="warning">${data.result.minutely.description.trim()}</font>
 
 **天气预报：**
-> 现在温度： <font color="info">${data.result.realtime.temperature.trim()}</font>
-> PM2.5：   <font color="info">${data.result.realtime.air_quality.pm25.trim()}</font>
-> 空气质量：  <font color="info">${data.result.realtime.air_quality.description.chn.trim()}</font>
 > <font color="info">${data.result.hourly.description.trim()}</font>
 
 ${alert_md}`);
