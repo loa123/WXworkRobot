@@ -30,3 +30,4 @@ class Plugin extends Bot {
 }
 
 new Plugin().run();
+ 
